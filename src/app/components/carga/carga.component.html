@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-md-4">
+        <h5>Seleccione archivos:</h5>
+        <!-- aqui ponemos la directiva que vamos a utilizar -->
+        <div class="well drop-zone file-over" appNgDropFiles>
+            <h6>Deje caer aqui los archivos</h6>
+            <img src="assets/drop-images.png" alt="">
+        </div>
+    </div>
+    <div class="col-md-8">
+        <h4>Cargar archivos.</h4>
+        <button type="button" class="btn btn-success" (click)="cargarImagenes()" [disabled]="archivos.length===0">
+            Cargar a Firebase</button>
+        <button type="button" class=" ml-2  btn btn-danger"> Limpiar</button>
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Nombre Archivo</th>
+                    <th>Tamaño</th>
+                    <th>Progreso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">sdfsdf</td>
+                    <td>sdfsd</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;">Cargando... 25%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

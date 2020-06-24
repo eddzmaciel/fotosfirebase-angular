@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fotos-firebase-2f648": {
+      "hosting": {
+        "fotosfirebase": [
+          "fotos-firebase-2f648"
+        ]
+      }
+    }
+  }
+}
